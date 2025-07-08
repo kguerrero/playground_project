@@ -1,6 +1,10 @@
-# SETUP
+# A Little Inspirational Developer Helper: A RAG System
 
-## base environment
+A playground space for familiarization of latest RAG and agent libraries.  As well as a space to experiment with different LLM  models and tokenization techniques
+
+This repository sets up a local LLM (can also be a call to hugging face interface client), loads in your favorite texts for guiding success as an engineer, and wraps everything into a RAG pipeline.
+
+## base environment set up
 
 ```bash
 
@@ -20,3 +24,10 @@ uv sync
 
 
 ```
+
+Note: you will need to authenticate to the hugging face community in the terminal if you want to use a remote inference API
+
+
+## Overview
+
+FAISS index is used for storing context embeddings
