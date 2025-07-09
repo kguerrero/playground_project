@@ -1,27 +1,36 @@
 # A Little Inspirational Developer Helper: A RAG System
 
-A playground space for familiarization of latest RAG and agent libraries.  As well as a space to experiment with different LLM  models and tokenization techniques
+A playground space for familiarization with the latest RAG and agent libraries.  As well as a space to experiment with different LLM models and tokenization techniques
 
-This repository sets up a local LLM (can also be a call to hugging face interface client), loads in your favorite texts for guiding success as an engineer, and wraps everything into a RAG pipeline.
+This repository sets up a local LLM (which can also be a call to the Hugging Face interface client), loads your favorite texts for guiding success as an engineer, and wraps everything into an RAG pipeline.
 
 ## base environment set up
 
 ```bash
-conda create -- name playground_project python=3.13
+conda create --name playground_project python=3.13
 conda activate playground_project
 pip install uv
 ```
     
 ## install dependencies
 
-navigate to `playground_project` directory that contains the uv lock file and create vertual environment
+Navigate to the `playground_project` directory that contains the uv lock file and create a virtual environment.
 
 ```bash
 uv sync
 ```
 
-Note: you will need to authenticate to the hugging face community in the terminal if you want to use the remote inference API example. 
+Note: You will need to authenticate to the Hugging Face community in the terminal if you want to use the remote inference API example. 
 
+Recommended steps for authenticating to the server:
+```
+pip install -U "huggingface_hub[cli]"
+huggingface-cli login
+```
+
+Reference websites for token setup: 
+- https://huggingface.co/docs/hub/security-tokens
+- https://huggingface.co/docs/huggingface_hub/main/en/guides/cli
 
 ## Overview
 
