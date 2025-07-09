@@ -10,6 +10,7 @@ dependencies = [
     "jupyterlab>=4.4.4",
     "langchain-community>=0.3.27",
     "langchain-huggingface>=0.3.0",
+    "matplotlib>=3.10.3",
     "openai>=1.93.2",
     "pypdf>=5.7.0",
     "sentence-transformers>=5.0.0",
